@@ -1,6 +1,4 @@
-# Simple Personal Website
-This is a website created with HTML and CSS. 
+# Alex Fischer Portfolio
+This website was created using Figma and coded using HTML, CSS, and Javascript with no responsive website. 
 
-Click here to view [website](https://lparedes17.github.io/SimplePersonalWebsiteOne/)
 
-**NOTE: The website is not responsive**
