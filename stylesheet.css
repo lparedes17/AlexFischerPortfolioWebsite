@@ -294,9 +294,6 @@ footer > p{
         justify-content:space-evenly;
         /* align-items:center; */
     }
-    #submitarea{
-        /* padding-right: 1rem; */
-    }
     #submitarea h1{
         font-size:36px;
     }
@@ -317,15 +314,6 @@ footer > p{
     .forminput label,input,textarea{
         font-size: 14px;
     }
-
-    #message textarea{
-        /* height: 150px; */
-        /* width: 100%; */
-    }
-
-   
-
-
 }
 
 @media screen and (max-width: 560px){
