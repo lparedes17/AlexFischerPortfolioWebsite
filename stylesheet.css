@@ -1,229 +1,281 @@
-*{
-    font-family: "Poppins", sans-serif;
-    font-size: 1em;
+:root{
+    --primary-color-100: #FFFFFF;
+    --primary-color-200: #FFFBDA;
+    --primary-color-300: #FFEFF7;
+    --primary-color-400: #FFED77;
+    --primary-color-500: #FCDDEC;
+    --primary-color-600: #000000;
+    --secondary-color-100: #888888;
+    --secondary-color-200: #B5B5B5;
+    --secondary-color-300: #D6D6D6;
+    --body-font: 'Average Sans', sans-serif;
+    --heading-font: 'Rufina', sans-serif;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: 21px;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Header Nav CSS */
-nav{
-    margin: 0rem 3rem;
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    display: block;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    
+    line-height: 120%;
+}
+
+h3{
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+h6{
+    font-size: 1.67rem;
+    margin: 1.5rem 0rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color-600);
+}
+
+a:hover{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--primary-color-600);
+    color: var(--primary-color-600);
+}
+/* Navigation Bar */
+#home{
+    background: var(--primary-color-300);
+    margin: 0;
+    padding:2.35rem 3.33rem;
+
+}
+#home ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 #logo{
     flex-grow: 1;
 }
-
-a{
-    text-decoration: none;
-    color: black;
-}
-.navbar{
-    margin: 1rem;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: black;
+.nav-link{
+    margin: 0 0 0 1rem;
 }
 
 .hamburger{
     display: none;
 }
 
-#mywork{
-    padding: 10px;
-    border-radius: 2em;
-    background-color: pink;
-    border:none;
-}
-.navbar:hover{
-    cursor: pointer;
-}
-
-#mywork:hover{
-    background-color: lightpink;
-}
-
-/* Home CSS */
-#home{
+/* Main Header*/
+#header{
+    background: url('./img/background-cover.png');
+    background-size: contain;
     display: flex;
     flex-direction: row;
+    gap:30px;
     align-items: center;
-    /* margin:3em 0em; */
+    padding: 0rem 3.33rem;
 }
 
 #myself{
-    background-image: linear-gradient(white,white,yellow,pink);
-    width: 40%;
-    height: auto;
-    margin: 3rem;
+    /* background-image: linear-gradient(white,white,yellow,pink); */
+    width: 45%;
+    height: 100%;
+    margin: 0;
 }
 
-#calltoaction h1{
+#introductions{
+    text-align: center;
+}
+
+#introductions h1{
     /* margin: 3em 0em; */
-    font-size: 3em;
-    font-weight: normal;
+    text-align: left;
+    font-size: 3.71em;
 }
 
-#calltoaction p{
-    font-size:1.8em;
-    margin: 0px 3rem 0px 0px;
+#introductions h6{
+    text-align: left;
+    font-weight: 400;
+    /* margin: 0px 3rem 0px 0px; */
 }
 
-#calltoaction button{
-    padding: 15px;
-    margin: 10px 0px;
-    border-radius: 24px;
-    background-color: pink;
-    border:none;
+#introductions a{
+    /* display: inline; */
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size:1.67rem;
+    font-weight: 700;
 }
 
-#calltoaction button:hover{
-    cursor: pointer;
-    background-color: lightpink;
+/* About Section */
+#about{
+    text-align: center;
+    padding: 3.33rem;
 }
 
-/* My Work CSS */
-#myownwork{
+/* Work Section*/
+#work{
+    background-color: var(--primary-color-200);
+    padding: 3.33rem;
+    text-align: center;
+}
+#work-gallery{
     display: grid;
-    grid-template-columns: auto auto;
-    margin: 3rem 3rem;
+    grid-template-columns: auto auto auto;
+    /* margin: 3rem 3rem; */
     grid-gap: 3rem;
     overflow: hidden;
 }
 
-#myownwork img{
+#work-gallery img{
     width: 100%;
     height: auto;
 }
 
-#myownwork img:nth-child(2){
+#work-gallery img:nth-child(2){
     grid-column: span(2) / 4;
 
 }
 
-/* Form CSS */
-
-
-
-#form{
-    background-color: lightyellow;
-    border-radius: 25px;
-    padding: 3rem;
-    margin: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* Contact Section*/
+#contact{
+    background:var(--primary-color-600);
+    color: var(--primary-color-100);
+    padding:3.33rem 6.33rem;
+    text-align: center;
+}
+#contact h6{
+    font-weight: 400;
+}
+#contact a{
+    color:white;
 }
 
-#submitarea h1{
-    padding: 10px;
-    font-size: 4rem;
-    font-weight: normal;
-    vertical-align: middle;
+#contact a:hover{
+    border-bottom: 2px solid var(--primary-color-100);
 }
 
-#formarea {
-    padding: 1rem 0rem;
+#contact-form{
+    background: var(--primary-color-300);
+    padding: 2.35rem;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 3em;
+    grid-template: auto auto auto auto / 1fr 1fr;
+    grid-gap:1rem 2rem;
+    text-align: left;
     /* justify-content: space-evenly; */
 }
 
-label{
-    padding: 5px;
-    font-weight: bold;
-    opacity: 0.2;
-    
+/* .form-input{
+    background: rgba(0, 0, 0, 0.25);
+    outline:3px #FFED77 solid;
+} */
+.form-input > label{
+    color:var(--primary-color-600);
+    margin-bottom: 1rem;
 }
 
-input[type=text], textarea{
-    border-radius: 20px;
-    border:1px solid #ccc;
-    padding: 1rem;
-    /* text-align: left; */
-    outline: none;
-    resize: vertical;
+.form-input > input,textarea{
+    box-sizing:border-box;
+    width: 100%;
 }
 
-textarea{
+.form-input > textarea{
+    box-sizing: border-box;
+    /* padding: 0; */
+    /* overflow: hidden; */
     resize: none;
-    overflow:hidden
-}
-input::placeholder{
-    
-    opacity: 0.4;
+    height: 87%;
 }
 
-input:hover{
-    box-shadow:  0px 0px 0px 2px #111;
+.form-input > input[type=text],input[type=email], textarea{
+    font-size: 0.67rem;
+    border-radius: 2px;
+    border:1px solid var(--secondary-color-200);
+    padding: 0.75rem;
+    margin-top:5px;
+    outline: none;
 }
 
-textarea:hover{
-    box-shadow:  0px 0px 0px 2px #111;
+
+input::placeholder,textarea::placeholder{
+    font-size: 0.87rem;
+    color:var(--secondary-color-300);
 }
 
-textarea::placeholder{
-    opacity:0.4;
+#fullname{
+    grid-area: 1 / 1 / 1 / 2;
 }
- 
 #emailaddress{ 
-    grid-column: 1 / 3 ;
+    grid-area: 2 / 1 / 2 / 1;
 }
 
-#emailaddress input{
-    width: 100%;
+#email-topic{
+    grid-area: 3 / 1 / 3 / 1;
 }
+
 #message{
-    grid-column: 1 / 3 ;
+    /* background: #000000; */
+    grid-area: 1 / 2 / 4 / 2;
+    /* max-height: 100%;/ */
 }
-
-#message textarea{
-    height: 200px;
-    width: 100%;
-}
-
-/* scroll up button */
 #submit{
-    position: sticky;
-    top:10px;
-    border-radius: 25px;
-    border-style: none;
-    padding: 1rem 2rem;
+    grid-area: 4 / 1 / 4 / 3;
+    border: 1px solid var;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: black;
     color:white;
+    justify-self: center;
 }
 #submit:hover{
     cursor: pointer;
-    background-color: lightpink;
-}
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+
+} 
 
 /* Footer CSS */
 
 footer{
-    padding-bottom: 1rem;
+    padding: 1.3rem 3.33rem;
     text-align: center;
+    position: relative;
+}
+
+footer > p{
+    color:var(--secondary-color-200)
 }
 
 #socialmedia{
-    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap:20px;
 }
 
+.link > a{
+    border: none;
+}
+
+
 #gotohome{
-    font-size: 3rem;
     position: absolute;
+    bottom:2rem;
     right:0rem;
 }
 
 .iconify:hover{
     cursor: pointer;
-    color:lightpink;
+    color: var(--primary-color-400);
 }
 
 /* Responsive Design */
@@ -267,7 +319,7 @@ footer{
     }
 
     #message textarea{
-        height: 150px;
+        /* height: 150px; */
         /* width: 100%; */
     }
 
