@@ -1,9 +1,7 @@
 # Alex Fischer Portfolio
-Alex wants a single static website that shows her image, work and contact page. She wants it minimalist and simple portfolio page. 
+Alex wants a single static responsive website that shows her image, work and contact page. She wants it minimalist and simple portfolio page. 
 
-Current Version [here]()
-
-Mobile and Tablet version in the works.
+Current Version [here](https://lparedes17.github.io/AlexFischerPortfolioWebsite/)
 
 # Table of Contents
 - [First Version](#first-version-v1)
@@ -37,6 +35,6 @@ Alex is a huge fan of pink and yellow. She is a web designer.
 
 # Next Steps
 It would be nice to 
-- add functionality to the form 
-- add a button to return to the top in the footer.
-- create pages for each work 
+- add functionality to the form
+- create a modal to navigate page from hamburger icon in mobile version
+- add animation for loading and scrolling to view info
